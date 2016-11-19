@@ -1,5 +1,6 @@
-{"hola": "mundo",
- "mundo": "cruel",
- "tags": ["a", "b", "c"]}
+{
+ :title "mundo"
+ :pdate "cruel"
+}
 
 **hola**

@@ -10,10 +10,10 @@ var result    = "";
 if (undefined != file){
     //result = "Convirtiendo " + file;
 
-    fs.readFile(file, 'utf8', (error, content) => {
+    fs.readFile(file, 'utf8', function(error, content) {
         if (!error){
-            //console.log(converter.makeHtml(content));
-            console.log(content.split("\n"));
+            console.log(converter.makeHtml(content));
+            //console.log(content.split("\n"));
         }
     });
 }
