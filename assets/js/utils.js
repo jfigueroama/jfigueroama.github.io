@@ -122,7 +122,8 @@ function e(tag){
     if (arguments.length > 1){
         var seg = arguments[1];
         var pri = 1;
-        if (!(seg instanceof HTMLElement) && (typeof seg == 'object')){
+        if (!(seg instanceof HTMLElement) && (typeof seg == 'object')
+                && !Array.isArray(seg)){
             for (attr in seg){
                 var p = attr.substr(0,3);   // Buscando el on- en el attr.
                 if (p != "on-"){
@@ -141,7 +142,11 @@ function e(tag){
             }else if (typeof el == "string"){
                 var nel = document.createTextNode(el);
                 ele.appendChild(nel);
-            }else{  // arreglo u otra cosa
+            }else if(Array.isArray(el)){
+                for (var j=0; j<el.length; j++){
+                    ele.appendChild(el[j]);
+                }
+            }else{  //  otra cosa
                 console.warn("Tipo no reconocido: ", el);
                 throw "Tipo de argumento no reconocido.";
             }
@@ -161,9 +166,35 @@ function route_from(loc){
     return search.length > 0 ? search.substring(1) : "/";
 }
 
-
-function load_site(file, callback){
+/**
+ * Me carga un sitio aplicando una funcion al texto de respuesta si se requiere.
+ */
+function load_site(file, fn, callback, cerror){
     ajax('GET', file, null, (xhr, rtext) => {
-        callback(rtext);
-    });
+        if (null != fn)
+            text = fn(rtext);
+        else 
+            text = rtext;
+
+        callback(text);
+    }, cerror);
+}
+
+
+function routes2array(rutas){
+    var arutas = [];
+    for (var r in rutas){
+        var nr = rutas[r];
+        nr['r'] = r;
+        arutas.push(nr);
+    }
+
+    return arutas;
+}
+
+/**
+ * Retorna la ruta de un post: /post/? + ruta.
+ */
+function url_post(ruta){
+    return "/post/?" + ruta;
 }
