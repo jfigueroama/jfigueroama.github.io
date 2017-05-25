@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+}
+
+.site {
+    display: inline-block;
+    min-width: 700px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+
+.site nav {
+    text-align: left;
+}
+
+nav a:visited, nav a:link, nav a:active {
+    color: blue;
+    font-size: large;
+    text-decoration: none;
+}
+
+nav .extra:visited, nav .extra:link, nav .extra:active {
+    color: gray;
+    font-size: medium;
+    text-decoration: none;
+    margin-left: 12px;
+}
+
+#titulo {
+    text-align: left;
+}
+
+#fecha {
+    display: inline;
+    color: gray;   
+}
+
+#autor {
+    display: inline;
+    font-style: italic;
+}
+
+#etiquetas {
+    color: gray;
+}
+
+#contenido {
+    text-align: justify;
+}
+
+#contenido a {
+    
+}
+
+#pie {
+    text-align: justify;
+}

@@ -58,8 +58,8 @@
 
   :profiles
   {:dev
-   {:dependencies [ [binaryage/devtools "0.8.3"] ]
-                   ;[devcards "0.2.2" :exclusions [cljsjs/react cljsjs/react-dom]]]
+   {:dependencies [ [binaryage/devtools "0.8.3"] 
+                   [devcards "0.2.3" :exclusions [cljsjs/react cljsjs/react-dom]] ]
 
     :plugins      [ [lein-figwheel "0.5.9"]]}}
 
@@ -90,17 +90,17 @@
                     :closure-defines {goog.DEBUG false}
                     :pretty-print    false}}
     ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    {:id           "hedc"
-     :source-paths ["src/horario/edicion"]
+    {:id           "devcards"
+     :source-paths ["src/dc"]
      :figwheel     {;:on-jsload "horario.edicion.core/mount-root"
                     :load-warninged-code true
                     ;:server-port 3450
                     :devcards true}
      :compiler     {:devcards true
-                    :main                 horario.edicion.devcards
-                    :output-to            "public/js/horario/edicion/app-devcards.js"
-                    :output-dir           "public/js/horario/edicion/devcards_out"
-                    :asset-path           "/public/js/horario/edicion/devcards_out"
+                    :main                 dc.core
+                    :output-to            "/assets/dc/devcards-dev.js"
+                    :output-dir           "/assets/dc/devcards_out"
+                    :asset-path           "/assets/dc/devcards_out"
                     :closure-defines      {goog.DEBUG true}
                     :source-map-timestamp true}}
 

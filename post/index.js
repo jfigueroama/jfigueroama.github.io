@@ -6,8 +6,9 @@ function load_site_success(content){
 
     var title   = "";
     var date    = "";
-    var tags    = [];
+    var tags    = "";
     var author  = "";
+    var scripts = [];
 
     var nhtml = converter.makeHtml(content);
     $('#contenido').innerHTML   = nhtml;
@@ -17,17 +18,29 @@ function load_site_success(content){
     if ($('#date'))
         date = $('#date').value;
     if ($('#tags'))
-        tags = JSON.parse($('#tags').value);
+        tags = $('#tags').value;
     if ($('#author'))
         author = $('#author').value;
+    if ($('#scripts'))
+        scripts = JSON.parse($('#scripts').value);
 
     $('#titulo').innerHTML      = title;
     $('#fecha').innerHTML       = date;
-    //$('#tags')
+    $('#etiquetas').innerHTML   = tags;
     $('#autor').innerHTML       = author;
     $('#vtitle').innerHTML       = $('#vtitle').innerHTML + ' - ' + title;
     
-    
+    if (tags == ""){
+        $('#tetiquetas').innerHTML = "";
+    }
+ 
+    scripts.forEach((src) => {
+        var script = document.createElement("SCRIPT");
+        script.type = 'text/javascript';
+        script.src  = src;
+        $('#body').appendChild(script);
+    });
+
     var codes = document.querySelectorAll('code');
     for (var i=0; i< codes.length; i++){
         var elem = codes.item(i);
