@@ -28,7 +28,7 @@ Si un lenguaje soporta las dos características mencionadas entonces muy probabl
 
 Los principales lenguajes funcionales que se usan en producción y no son juguetes son [Clojure](http://www.clojure.org/), [Scala](http://www.scala-lang.org), Erlang y [Elixir](http://elixir-lang.org), [Haskell](http://www.haskell.org/), y algunos nuevos como [Elm](http://www.elm-lang.org/). Pero, &iquest;qué hay de lenguajes como Python, Ruby, Perl o PHP&quest; &iquest;no soportan el paradigma funcional&quest; __No realmente__. Les faltan las estructuras de datos inmutables con una API acorde para ello.
 
-
+__Continuará__
 
 
 
