@@ -42,7 +42,7 @@ var tags = function(rtext){
 
 var routes = {
     "/": {"file": "/site/inicio.md", "title": "", "fn": null },
-    "/about": {"title": "About me;","file": "/site/about.md", "fn": null },
+    "/about": {"title": "About me","file": "/site/about.md", "fn": null },
     "no-encontrada": {"title": "P&aacute;gina inexistente", "file": "/site/404.md", "fn": null},
     "/blog": {"file": "/rutas.json", "fn": blog, "title": "Blog"},
     "/tags": {"file": "/rutas.json", "fn": tags, "title": "Tags"}
