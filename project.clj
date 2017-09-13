@@ -1,15 +1,15 @@
 (defproject sch "jfigueroama.github.io 0.0.1"
   :description "Scripts de apoyo y ejemplos de clojurescript para mi web."
-  :dependencies [[org.clojure/clojure "1.9.0-alpha15"]
+  :dependencies [[org.clojure/clojure "1.9.0-alpha20"]
 
                  ; Clientes
-                 [org.clojure/clojurescript "1.9.521"]
+                 [org.clojure/clojurescript "1.9.908"]
                  [reagent "0.6.0"
                   :exclusions
                   [org.clojure/tools.reader cljsjs/react]
                   ]
                  [binaryage/devtools "0.8.3"]
-                 [re-frame "0.9.2" :exclusions [cljsjs/react]]
+                 [re-frame "0.10.1" :exclusions [cljsjs/react]]
                  ;[cljsjs/react-with-addons "15.4.2-2"]
                  [cljs-ajax "0.5.8"]
                  ;[cljsjs/material-ui "0.16.4-0"]
@@ -26,8 +26,8 @@
                  [cheshire "5.6.3"]    ; json
 
                  ; Utiles
-                 [org.clojure/core.async "0.3.442"]
-                 [funcool/cats "2.0.0"]
+                 [org.clojure/core.async "0.3.443"]
+                 [funcool/cats "2.1.0"]
                  [com.rpl/specter "1.0.1"]
                  [funcool/lentes "1.1.0"]
 

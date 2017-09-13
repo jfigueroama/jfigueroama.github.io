@@ -3,5 +3,4 @@
 <input type='hidden' id='date'   value='' />
 <input type='hidden' id='author' value='' />
 
-La p&aacute;gina que solicitaste no existe.
-
+Page not found :-(

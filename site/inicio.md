@@ -1,13 +1,13 @@
-Mi nombre es José Figueroa Martínez. Soy profesor-investigador en la [Universidad Tecnológia de la Mixteca](http://www.utm.mx/) desde octubre del 2012.
+My name is José Figueroa Martínez. I am associate professor in the [Universidad Tecnológia de la Mixteca](http://www.utm.mx/) since 10/2012.
 
-Soy Licenciado en Ciencias de la Computación por la [Universidad de Sonora](http://www.uson.mx) asi como Maestro y Doctor en Ingeniería de Software por la [Universidad de Granada](http://www.ugr.es).
+I have a PhD and Master grade in Software Development by the [Universidad de Granada](http://www.ugr.es) (UTM), Spain, and a Bachelor in Computer Science by the [Universidad de Sonora](http://www.uson.mx)
 
-En la [UTM](http://www.utm.mx/) imparto varias materias como Programación Web, Bases de Datos, Ingeniería de Software a nivel de Maestría, Cómputo Ubicuo,  Procesos de Calidad, entre otras.
+My current interests are functional programming, web development, microservices and cool software architectures. I am fan of [Clojure](http://www.clojure.org) and [Clojurescript](http://www.clojurescript.org), althoug I am learning [Elixir](http://www.elixir-lang.org) right now.
 
-Mis líneas de investigación son la iniciativa mixta, la interacción humano computadora, la calendarización de horarios, la optimización a través de metaheurísticas, entre otras.
+At the UTM I have taught courses on structured programming, algorith design, databases, web programming, quality processes, ubiquitous computing, software engineering, programming languages, human-computer interactions, among others.
 
-El propósito de este sitio es divulgar conocimiento que he ido acumulando desde la universidad. Se puede decir que como una esponja he acumulado mucha agua, pero no la he exprimido. Espero con este sitio compartir lo mucho o poco que pueda de lo que he aprendido en el camino.
+My research topics are mixed innitiative, timetabling, information display and metaheuristic based optimization.
 
-Mis intereses particulares son la ensenanza de la programación, especialmente la programación funcional. Además deseo proporcionar ejemplos no triviales, reales y útiles de las principales tecnologías que manejo y prefiero: [Clojure](http://www.clojure.org/) y [Clojurescript](http://www.clojurescript.org).
+Thanks for your visit :-)
 
-Gracias por su visita :-)
+
